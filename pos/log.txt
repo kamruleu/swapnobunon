@@ -1,0 +1,1 @@
+select * from seuserlic where xterminaluser='VEN0003' and xemino='353410109099477' and zactive='1'

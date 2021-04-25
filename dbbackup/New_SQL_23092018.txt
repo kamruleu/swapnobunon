@@ -1,0 +1,18 @@
+CREATE TABLE `dotbdsol_erp`.`itemscmap` ( `xsl` SERIAL NOT NULL , `ztime` TIMESTAMP NOT NULL , `zutime` DATETIME NULL , `bizid` INT(4) NOT NULL , `xemail` VARCHAR(100) NOT NULL , `zemail` VARCHAR(100) NULL , `xitemcode` VARCHAR(20) NOT NULL , `xschool` VARCHAR(200) NOT NULL , `xclass` VARCHAR(50) NOT NULL ) ENGINE = InnoDB;
+
+
+
+ALTER TABLE `itemscmap` ADD CONSTRAINT `fkey_itemscmap_pabuziness` FOREIGN KEY (`bizid`) REFERENCES `pabuziness`(`bizid`) ON DELETE RESTRICT ON UPDATE RESTRICT;
+
+
+
+ALTER TABLE `itemscmap` ADD `xrecflag` VARCHAR(10) NOT NULL DEFAULT 'Live' AFTER `xclass`;
+
+
+ALTER TABLE `itemscmap` ADD CONSTRAINT `fkey_itemscmap_seitem` FOREIGN KEY (`bizid`, `xitemcode`) REFERENCES `seitem`(`bizid`, `xitemcode`) ON DELETE RESTRICT ON UPDATE RESTRICT;
+
+
+ALTER TABLE `itemscmap` CHANGE `xschool` `xcus` VARCHAR(20) CHARACTER SET utf8 COLLATE utf8_unicode_ci NOT NULL;
+
+
+ALTER TABLE `itemscmap` ADD CONSTRAINT `fkey_itemscmap_secus` FOREIGN KEY (`bizid`, `xcus`) REFERENCES `secus`(`bizid`, `xcus`) ON DELETE RESTRICT ON UPDATE RESTRICT;

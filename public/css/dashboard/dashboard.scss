@@ -1,0 +1,133 @@
+.skin-blue .main-header .navbar {
+	background: linear-gradient(178deg, #107baa 0%, #2eb7f3 100%) !important;
+	// padding: 7px 0;
+}
+.skin-blue .main-header .logo {
+	background-color: #fff !important;
+	color: #222 !important;
+}
+.new__p {
+	margin: 0px;
+	color: #fff;
+	font-weight: 600;
+	font-size: 19px;
+	line-height: 0px;
+	float: left;
+	padding: 24px 6px;
+}
+.new_header_concep {
+	background: linear-gradient(178deg, #0d83b7 0%, #2eb7f3 100%);
+	height: 0px;
+}
+.account__boxx {
+	width: 100%;
+	float: left;
+	display: block;
+	margin-top: 0px;
+}
+.account__boxx .info-box {
+    box-shadow: 0 1px 2px 0 rgba(0,0,0,.1) !important;
+    padding: 20px;
+}
+.info_box__details {
+	width: 100%;
+	// float: left;
+	display: block;
+}
+.info_box__details img {
+	width: 14%;
+	float: left;
+}
+.info_box__details_right_images {
+	width: 10% !important;
+}
+.info_box__details h2 {
+	font-size: 24px;
+	margin: 0;
+	font-weight: 600;
+}
+.info_box__details h2 {
+	font-size: 18px;
+}
+.today__rasult {
+	position: absolute;
+	right: 25px;
+	top: 15px;
+	font-size: 14px;
+}
+
+@media only screen and (max-width: 500px) {
+  .today__rasult {
+    font-size: 10px;
+  }
+  
+  .today_chart {
+    font-size: 10px;
+  }
+}
+
+.today__rasult P {
+	margin: 0;
+}
+.info_box_right {
+    box-shadow: 0 1px 2px 0 rgba(0,0,0,.1) !important;
+	padding: 9px 15px;
+	position: relative;
+	min-height: 115px;
+}
+.today__rasult_two {
+	top: 4px;
+}
+
+.skin-blue .wrapper, .skin-blue .main-sidebar, .skin-blue .left-side {
+	background-color: #fff;
+	box-shadow: 0 1px 15px 0 rgba(0, 0, 0, 0.3) !important;
+}
+.skin-blue .user-panel > .info, .skin-blue .user-panel > .info > a {
+	color: #222;
+}
+.skin-blue .sidebar a {
+	color: #444;
+	font-weight: 400;
+}
+.skin-blue .sidebar-menu > li:hover > a, .skin-blue .sidebar-menu > li.active > a, .skin-blue .sidebar-menu > li.menu-open > a {
+	color: #fff;
+	background: linear-gradient(178deg, #0d83b7 0%, #2eb7f3 100%);
+}
+.box.box-warning {
+	border-top-color: #1792c8;
+}
+.skin-blue .sidebar-menu > li > .treeview-menu {
+	margin: 0px 1px;
+	background: #ececec !important;
+}
+.skin-blue .sidebar-menu .treeview-menu > li > a {
+	color: #444;
+}
+.skin-blue .sidebar-menu .treeview-menu > li.active > a, .skin-blue .sidebar-menu .treeview-menu > li > a:hover {
+	color: #1b99d1;
+}
+.box.box-success {
+	border-top-color: #1b9ad1;
+}
+// .panel-heading {
+// 	color: #fff !important;
+// 	background-color: #20a1da !important;
+// 	border-color: #20a1da !important;
+// }
+
+.panel__color {
+	background: #222 !important;
+}
+.btn__color {
+	color: #fff;
+	background-color: #2eb7f3 !important;
+	border-color: #2eb7f3 !important;
+}
+.input-sm {
+	height: 30px;
+	padding: 19px 10px !important;
+	font-size: 12px;
+	line-height: 1.5;
+	border-radius: 3px;
+}
